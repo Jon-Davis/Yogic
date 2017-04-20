@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="YogicBreathing">
+        <attr name="time" format="integer" />
+        <attr name="timeScale" format="enum">
+            <enum name="millis" value="0"/>
+            <enum name="seconds" value="1"/>
+            <enum name="minutes" value="2"/>
+        </attr>
+        <attr name="callbackFrequency" format="integer" />
+    </declare-styleable>
+</resources>
