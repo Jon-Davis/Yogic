@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.countdownview.YogicBreathing">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="@string/when_you_are_ready_to_begin_press_start"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        android:id="@+id/Yogic_Header"/>
+
     <com.example.android.countdownview.views.CountdownView
-        android:layout_width="368dp"
-        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
         android:textSize="100sp"
         android:textAlignment="center"
-        app:time="10"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="8dp" />
+        app:time="0"
+        android:layout_below="@id/Yogic_Header"
+        android:id="@+id/Yogic_Countdown"
+        android:layout_marginTop="40dp"/>
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:text="@string/start"
+        android:textSize="50dp"
+        android:id="@+id/Yogic_Start"/>
+
+</RelativeLayout>
