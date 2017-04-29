@@ -46,13 +46,17 @@ public class YogicBreathing extends AppCompatActivity implements CountdownFinish
                 startButton.setText("Restart");
             } else {
                 countdownView.setTime(0);
-                countdownView.stop();
                 header.setText("When you are ready to begin, press start.");
                 hasStarted = false;
                 startButton.setText("Start");
+                countdownView.stop();
             }
 
         });
+
+        /*
+        *  The text to speech engine
+        */
         speech =new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
@@ -64,6 +68,9 @@ public class YogicBreathing extends AppCompatActivity implements CountdownFinish
             }
         });
 
+        /*
+         * The opening dialog, may replace with intro screen.
+         */
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage("Yogic Breathing\n\nIn this section, you will be asked to perform a series " +
                 "of breathing exercises. When the screen prompts you to 'Inhale', please breath in for" +
