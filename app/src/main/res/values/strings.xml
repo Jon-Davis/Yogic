@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Yogic Breathing Exercise</string>
-    <string name="when_you_are_ready_to_begin_press_start">When you are ready to begin, press start</string>
+    <string name="when_you_are_ready_to_begin_press_start">When you are ready to begin, press start.</string>
     <string name="start">start</string>
 </resources>

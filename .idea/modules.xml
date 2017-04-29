@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CountdownView.iml" filepath="$PROJECT_DIR$/CountdownView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Yogic.iml" filepath="$PROJECT_DIR$/Yogic.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
